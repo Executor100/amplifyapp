@@ -1,0 +1,39 @@
+{
+    "paths": [
+        {
+            "name": "/estado",
+            "lambdaFunction": "ApeTestLambda",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST",
+                    "/GET"
+                ]
+            },
+            "policyResourceName": "/estado"
+        }
+    ],
+    "resourceName": "ApiTestReact",
+    "apiName": "ApiTestReact",
+    "functionArns": [
+        {
+            "lambdaFunction": "ApeTestLambda"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 0,
+        "authRoleName": "amplify-amplifyapp-dev-73540-authRole",
+        "unAuthRoleName": "amplify-amplifyapp-dev-73540-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "ApeTestLambda",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

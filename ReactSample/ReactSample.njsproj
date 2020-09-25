@@ -31,6 +31,26 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="amplify\#current-cloud-backend\amplify-meta.json" />
+    <Content Include="amplify\.config\local-aws-info.json" />
+    <Content Include="amplify\.config\local-env-info.json" />
+    <Content Include="amplify\.config\project-config.json" />
+    <Content Include="amplify\backend\amplify-meta.json" />
+    <Content Include="amplify\backend\backend-config.json" />
+    <Content Include="amplify\backend\function\ApeTestLambda\amplify.state" />
+    <Content Include="amplify\backend\function\ApeTestLambda\ApeTestLambda-cloudformation-template.json" />
+    <Content Include="amplify\backend\function\ApeTestLambda\function-parameters.json" />
+    <Content Include="amplify\backend\function\ApeTestLambda\parameters.json" />
+    <Content Include="amplify\backend\function\ApeTestLambda\src\.gitignore" />
+    <Content Include="amplify\backend\function\ApeTestLambda\src\ApiLambdaBack.cs" />
+    <Content Include="amplify\backend\function\ApeTestLambda\src\ApiLambdaBack.csproj" />
+    <Content Include="amplify\backend\function\ApeTestLambda\src\aws-lambda-tools-defaults.json" />
+    <Content Include="amplify\backend\function\ApeTestLambda\src\event.json" />
+    <Content Include="amplify\backend\function\ApeTestLambda\src\global.json" />
+    <Content Include="amplify\backend\tags.json" />
+    <Content Include="amplify\cli.json" />
+    <Content Include="amplify\team-provider-info.json" />
+    <Content Include="aws-exports.js" />
     <Content Include="dist\app-bundle.js" />
     <Content Include="dist\app-bundle.js.map" />
     <Content Include="index.html">
@@ -52,6 +72,13 @@
     </TypeScriptCompile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="amplify\" />
+    <Folder Include="amplify\#current-cloud-backend\" />
+    <Folder Include="amplify\.config\" />
+    <Folder Include="amplify\backend\" />
+    <Folder Include="amplify\backend\function\" />
+    <Folder Include="amplify\backend\function\ApeTestLambda\" />
+    <Folder Include="amplify\backend\function\ApeTestLambda\src\" />
     <Folder Include="dist\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
